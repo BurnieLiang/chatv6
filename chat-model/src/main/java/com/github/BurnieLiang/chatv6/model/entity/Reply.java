@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Builder
 @ToString
 @AllArgsConstructor
-public class Resp<T> implements Serializable {
+public class Reply<T> implements Serializable {
 
     private static final long serialVersionUID = 1L;
     /**
@@ -40,26 +40,26 @@ public class Resp<T> implements Serializable {
     @Setter
     private T data;
 
-    public Resp() {
+    public Reply() {
         super();
     }
 
-    public Resp(T data) {
+    public Reply(T data) {
         this.data = data;
     }
 
-    public Resp(String msg, T data) {
+    public Reply(String msg, T data) {
         this.msg = msg;
         this.data = data;
     }
 
-    public Resp(T data, String msg) {
+    public Reply(T data, String msg) {
         super();
         this.data = data;
         this.msg = msg;
     }
 
-    public Resp(Throwable e) {
+    public Reply(Throwable e) {
         super();
         this.msg = e.getMessage();
         this.status = FAIL;
