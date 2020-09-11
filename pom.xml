@@ -9,8 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <modules>
-        <module>chat</module>
-        <module>springboot-javafx</module>
+        <module>chat-app</module>
+        <module>chat-springboot-javafx</module>
+        <module>chat-model</module>
+        <module>chat-swagger</module>
     </modules>
 
     <properties>
