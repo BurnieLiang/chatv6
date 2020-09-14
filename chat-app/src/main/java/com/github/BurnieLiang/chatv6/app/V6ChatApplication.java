@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Boning Liang
  * @date 2020-09-11 13:46:25
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.github.BurnieLiang.chatv6.*"})
 public class V6ChatApplication extends AbstractJavaFxApplicationSupport {
 
 //    @Override
