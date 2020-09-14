@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>chat</artifactId>
+    <artifactId>chat-app</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.github.BurnieLiang</groupId>
-            <artifactId>springboot-javafx</artifactId>
+            <artifactId>chat-springboot-javafx</artifactId>
             <version>${project.version}</version>
         </dependency>
         <!--undertow容器-->

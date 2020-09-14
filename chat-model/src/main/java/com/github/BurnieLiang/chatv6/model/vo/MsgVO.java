@@ -3,7 +3,6 @@ package com.github.BurnieLiang.chatv6.model.vo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.time.ZonedDateTime;
 
@@ -45,8 +44,6 @@ public class MsgVO {
      */
     private String fileExt;
 
-
-    private MultipartFile file;
 
 //    public String getContent() {
 //        return new String(Base64.decode(content.getBytes(StandardCharsets.UTF_8)), StandardCharsets.UTF_8).trim();
