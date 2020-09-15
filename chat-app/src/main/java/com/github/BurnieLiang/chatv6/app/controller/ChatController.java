@@ -1,8 +1,9 @@
 package com.github.BurnieLiang.chatv6.app.controller;
 
 import com.github.BurnieLiang.chatv6.model.entity.Reply;
-import com.github.BurnieLiang.chatv6.model.vo.MsgVO;
+import com.github.BurnieLiang.chatv6.model.entity.Message;
 import com.github.BurnieLiang.chatv6.service.ChatService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/chat")
+@Slf4j
 public class ChatController {
 
     @Autowired
@@ -21,8 +23,9 @@ public class ChatController {
 
     @PostMapping("/send")
     public Reply send() {
-        MsgVO msgVO = new MsgVO();
+        Message msgVO = new Message();
         chatService.send(msgVO);
+        log.error("error");
         return new Reply<>();
     }
 

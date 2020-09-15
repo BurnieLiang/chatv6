@@ -1,6 +1,6 @@
 package com.github.BurnieLiang.chatv6.service.impl;
 
-import com.github.BurnieLiang.chatv6.model.vo.MsgVO;
+import com.github.BurnieLiang.chatv6.model.entity.Message;
 import com.github.BurnieLiang.chatv6.service.ChatService;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class ChatServiceImpl implements ChatService {
 
     @Override
-    public String send(MsgVO msg) {
+    public String send(Message msg) {
         return null;
     }
 }

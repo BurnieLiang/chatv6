@@ -1,6 +1,6 @@
 package com.github.BurnieLiang.chatv6.service;
 
-import com.github.BurnieLiang.chatv6.model.vo.MsgVO;
+import com.github.BurnieLiang.chatv6.model.entity.Message;
 
 /**
  * @author Boning Liang
@@ -8,6 +8,6 @@ import com.github.BurnieLiang.chatv6.model.vo.MsgVO;
  */
 public interface ChatService {
 
-    String send(MsgVO msg);
+    String send(Message msg);
 
 }
