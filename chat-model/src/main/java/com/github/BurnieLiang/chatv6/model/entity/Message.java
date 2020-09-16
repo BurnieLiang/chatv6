@@ -10,6 +10,7 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.List;
 
 /**
  * @author Boning Liang
@@ -32,9 +33,24 @@ public class Message {
     private PublicKey recipient;
 
     /**
+     * 消息接收方的网络地址
+     */
+    private String recipientAddr;
+
+    /**
      * 消息发送方的公钥信息
      */
     private PublicKey sender;
+
+    /**
+     * 消息发送方的网络地址
+     */
+    private String senderAddr;
+
+    /**
+     * 路由
+     */
+    private Route route;
 
     /**
      * 签名
