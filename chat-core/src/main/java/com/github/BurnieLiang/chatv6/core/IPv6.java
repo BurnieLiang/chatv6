@@ -12,6 +12,8 @@ import java.util.Enumeration;
  */
 public class IPv6 {
 
+
+
     public static String get() {
         InetAddress inetAddress = null;
         InetAddress localIP = null;

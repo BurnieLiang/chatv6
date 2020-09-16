@@ -1,3 +1,10 @@
 spring:
   profiles:
     active: dev
+
+swagger:
+  title: ${project.artifactId}
+  description: ${project.description}
+  version: ${project.version}
+  contact:
+    name: 'Burnie Liang'

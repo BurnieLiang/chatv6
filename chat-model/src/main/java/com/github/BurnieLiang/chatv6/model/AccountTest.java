@@ -1,6 +1,5 @@
 package com.github.BurnieLiang.chatv6.model;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.BurnieLiang.chatv6.model.entity.Account;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
